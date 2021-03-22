@@ -1,0 +1,77 @@
+<!--option.html-->
+<head>
+	<script>
+
+	var answerArray = []
+
+	var questionArray = [
+		"tempreture?", "Food?", "Distance?"
+	];
+	var questionTick = 0;
+	var questionNum = questionTick % 3;
+		
+		function getValue(){
+
+			var markedCheckbox = document.getElementsByName("temperature");
+			var curQuestion = document.getElementById("question").title;
+
+
+			for (var checkbox of markedCheckbox) {
+				if (checkbox.checked){
+					console.log("checkbox: ", checkbox)
+					answerArray.push(checkbox.value)
+				}
+			}  
+
+			console.log(answerArray)
+			/*alert("selected value is: " + answer)*/
+			document.getElementById("result").innerHTML = answerArray
+
+			//////////rotate question
+			questionTick += 1;
+
+			questionNum = questionTick % 3;
+
+			document.getElementById("question").innerHTML = questionArray[questionNum];
+
+		}
+
+		function discriminator(qValue, dictArray, question){
+			value
+			dictArray 
+		}
+
+		function ranking(){
+			getValue();
+		}
+
+	</script>
+</head>
+<body>
+<h2>Question: </h2>
+<h2><div id="question" title="temp">temperature?</div></h2><br>
+
+Cold
+
+<LABEL FOR="R1"></LABEL>
+<INPUT TYPE="Radio" Name="temperature" ID="R1" Value="1">
+
+<LABEL FOR="R2"></LABEL>
+<INPUT TYPE="Radio" Name="temperature" ID="R2" Value="2">
+
+<LABEL FOR="R3"></LABEL>
+<INPUT TYPE="Radio" Name="temperature" ID="R3" Value="3">
+
+<LABEL FOR="R4"></LABEL>
+<INPUT TYPE="Radio" Name="temperature" ID="R4" Value="4">
+
+<LABEL FOR="R5"></LABEL>
+<INPUT TYPE="Radio" Name="temperature" ID="R5" Value="5">
+
+Hot
+
+<input type = "button", value = "submit", onclick = "ranking()">
+<br>
+
+result: <div id="result"></div>
+</body>
