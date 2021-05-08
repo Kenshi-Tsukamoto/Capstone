@@ -1,0 +1,307 @@
+<div id='optionWord'><!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="/js/footerFixed.js"></script>
+<script src="jquery.js"></script>
+
+<title>Travel Assistant</title>
+
+<link rel="stylesheet" href="capstone.css">
+
+
+</head>
+
+<body>
+
+
+
+  <div class="top" id="top">
+      <img id="mypic" src="assets/JPN.jpg" alt="" class="bg">
+  <div class="top-content">
+    <a href="#top"><h1 class="logo">Yoji Kiriki</h1></a>
+    <div class="top-let">
+      <h1 class="welcome">Welcome to Travel assistant</h1>
+      <a href="#tobisaki" class="go-down"><i class="fas fa-angle-double-down fa-2x shita"></i></a>
+    </div>
+    <div class="top-cou">
+      <p id="couName">Japan</p>
+    </div>
+  </div>
+
+  </div>
+<a id="tobisaki" class="anchor"> </a>
+  <div id="optionContent" class="flame">
+    <!-- <h2>Question:<span id=number></span></h2> -->
+    <h2><div id="question" title="temp">Questions</div></h2><br>
+
+    <div class="r-yoko">
+    <div class="r-low">
+      <span id="low"></span>
+    </div>
+    <div class="r-mid">
+      <div class="fle">
+
+      <INPUT TYPE="Radio" Name="options" ID="R1" Value="1">
+      <label for="R1" class="la1">●</label>
+
+      <INPUT TYPE="Radio" Name="options" ID="R2" Value="2">
+      <label for="R2" class="la2">●</label>
+
+      <INPUT TYPE="Radio" Name="options" ID="R3" Value="3">
+      <label for="R3" class="la3">●</label>
+
+      <INPUT TYPE="Radio" Name="options" ID="R4" Value="4">
+      <label for="R4" class="la4">●</label>
+
+      <INPUT TYPE="Radio" Name="options" ID="R5" Value="5">
+      <label for="R5" class="la5">●</label>
+    </div>
+  </div>
+
+
+    <div class="r-high">
+      <span id="high"></span>
+    </div>
+    </div>
+
+    <br>
+    <a class="but-a">
+    <input type = "button", value = "Submit", onclick = "ranking()" class="sub-but">
+    </a>
+    <br>
+    <br>
+    <br>
+
+    Result: <div id="result"></div>
+  </div>
+
+  <!-- <div class="ques" id="1">
+    <h2>Qustion Number<div id = "qnum"></div></h2>
+    <div id = "qsec">Do you like hot weather?</div><br>
+    <button value="Y" onclick="weather(this)">Yes</button>
+    <button value="N" onclick="weather(this)">No</button>
+    <button value="I" onclick="weather(this)">I don't care</button>
+  </div>
+
+  <table>
+    <tr>
+      <td class="tex">
+        <h2 id="cName"></h2>
+        <div id="result">
+
+        </div>
+      </td>
+      <td class="ima">
+        <img id ="pic" src="" alt="">
+      </td>
+    </tr>
+  </table> -->
+
+<div class="flame" id="multiple">
+
+<h1 class="questionTitle">Here are some questions</h1>
+
+<div class="questionSection">
+  <div class="Que question1" id="q1">Which one do you like the best?</div>
+
+  <div class="optionContainer">
+    <div id="option1" class="option">
+      <input type="radio" name="q1" id="q11" class="optionRadio" value="1">
+      <label for="q11"><div id="optionWord1">option</div></label>
+    </div>
+  </div>
+
+  <div class="optionContainer">
+    <div id="option2" class="option">
+      <input type="radio" name="q1" id="q12" class="optionRadio" value="2">
+      <label for="q12"><div id="optionWord2">option</div></label>
+    </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option3" class="option">
+      <input type="radio" name="q1" id="q13" class="optionRadio" value="3">
+      <label for="q13"><div id="optionWord3">option</div></label>
+    </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option4" class="option">
+      <input type="radio" name="q1" id="q14" class="optionRadio" value="4">
+      <label for="q14"><div id="optionWord4">option</div></label>
+    </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option5" class="option">
+      <input type="radio" name="q1" id="q15" class="optionRadio" value="5">
+      <label for="q15"><div id="optionWord5">option</div></label>
+    </div>
+  </div>
+  <div class="Que question2" id="q2">Which one do you like the best?</div>
+  <div class="optionContainer">
+    <div id="option1" class="option">
+    <input type="radio" name="q2" id="q21" class="optionRadio">
+    <label for="q21"><div id="optionWord6">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option2" class="option">
+    <input type="radio" name="q2" id="q22" class="optionRadio">
+    <label for="q22"><div id="optionWord7">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option3" class="option">
+    <input type="radio" name="q2" id="q23" class="optionRadio">
+    <label for="q23"><div id="optionWord8">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option4" class="option">
+    <input type="radio" name="q2" id="q24" class="optionRadio">
+    <label for="q24"><div id="optionWord9">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option5" class="option">
+    <input type="radio" name="q2" id="q25" class="optionRadio">
+    <label for="q25"><div id="optionWord10">option</div></label>
+  </div>
+  </div>
+
+  <div class="Que question3" id="q3">Which one do you like the best?</div>
+  <div class="optionContainer">
+    <div id="option1" class="option">
+    <input type="radio" name="q3" id="q31" class="optionRadio">
+    <label for="q31"><div id="optionWord11">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option2" class="option">
+    <input type="radio" name="q3" id="q32" class="optionRadio">
+    <label for="q32"><div id="optionWord12">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option3" class="option">
+    <input type="radio" name="q3" id="q33" class="optionRadio">
+    <label for="q33"><div id="optionWord13">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option4" class="option">
+    <input type="radio" name="q3" id="q34" class="optionRadio">
+    <label for="q34"><div id="optionWord14">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option5" class="option">
+    <input type="radio" name="q3" id="q35" class="optionRadio">
+    <label for="q35"><div id="optionWord15">option</div></label>
+  </div>
+  </div>
+
+  <div class="Que question4" id="q4">Which one do you like the best?</div>
+  <div class="optionContainer">
+    <div id="option1" class="option">
+    <input type="radio" name="q4" id="q41" class="optionRadio">
+    <label for="q41"><div id="optionWord16">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option2" class="option">
+    <input type="radio" name="q4" id="q42" class="optionRadio">
+    <label for="q42"><div id="optionWord17">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option3" class="option">
+    <input type="radio" name="q4" id="q43" class="optionRadio">
+    <label for="q43"><div id="optionWord18">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option4" class="option">
+    <input type="radio" name="q4" id="q44" class="optionRadio">
+    <label for="q44"><div id="optionWord19">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option5" class="option">
+    <input type="radio" name="q4" id="q45" class="optionRadio">
+    <label for="q45"><div id="optionWord20">option</div></label>
+  </div>
+  </div>
+
+  <div class="Que question5" id="q5">Which one do you like the best?</div>
+  <div class="optionContainer">
+    <div id="option1" class="option">
+    <input type="radio" name="q5" id="q51" class="optionRadio">
+    <label for="q51"><div id="optionWord21">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option2" class="option">
+    <input type="radio" name="q5" id="q52" class="optionRadio">
+    <label for="q52"><div id="optionWord22">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option3" class="option">
+    <input type="radio" name="q5" id="q53" class="optionRadio">
+    <label for="q53"><div id="optionWord23">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option4" class="option">
+    <input type="radio" name="q5" id="q54" class="optionRadio">
+    <label for="q54"><div id="optionWord24">option</div></label>
+  </div>
+  </div>
+  <div class="optionContainer">
+    <div id="option5" class="option">
+    <input type="radio" name="q5" id="q55" class="optionRadio">
+    <label for="q55"><div id="optionWord25">option</div></label>
+  </div>
+  </div>
+</div>
+<button type="button" name="button" class="sub-but">Submit</button>
+
+</div>
+
+  <div class="flame">
+    <h1>sample</h1>
+    <table>
+      <tr>
+        <td class="tex">
+          <h2 id="cName"></h2>
+          <div id="result">
+
+          </div>
+        </td>
+        <td class="ima">
+          <img id ="pic" src="assets/USA.jpg" alt="">
+        </td>
+      </tr>
+    </table>
+    <i class="fab fa-wikipedia-w" id="wiki"></i>
+    <i class="fab fa-google" id="google"></i>
+  </div>
+
+  <a href="#top" class="go-up" id="1"><i class="fas fa-angle-double-up fa-2x ue"></i></a>
+  <footer id="footer">
+    <a href="#top"><p>&copy 2021 Yoji Kiriki</p></a>
+  </footer>
+
+
+<script src="filesystem:chrome-extension://lkfkkhfhhdkiemehlpkgjeojomhpccnh/temporary/script.js">
+</script>
+<script src="capstone.js"></script>
+</body>
+</html>
