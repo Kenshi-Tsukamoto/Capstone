@@ -10,9 +10,12 @@ body{
   font-size: 1.3rem; text-align: center;margin:0;
   color:#3d5070;
 }
-/* #multiple{
+#multiple{
   display: none;
-} */
+}
+#research{
+  display: none;
+}
 
 h1{
   font-size:2.6rem;
@@ -111,16 +114,7 @@ table{width:100%;
 .ima{
   width:35%;
 }
-#pic{
-  width:300px;
-  height:200px;
-  margin-top:30px;
-  /* display: none; */
-  border-radius: 10px;
-  object-fit: cover;
-  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, .3);
-  box-shadow: 0 5px 8px rgba(0, 0, 0, .3);
-}
+
 span{
   text-decoration:underline;
   font-size:2rem;
@@ -240,10 +234,13 @@ input[type=radio]:checked + label{
   border-radius: 100vh;
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
   box-shadow: 0 3px 5px rgba(0, 0, 0, .3);
-  margin-top:20px;
+  margin-top:40px;
+  font-size:1.25rem;
+  height:4rem;
+
 }
 .sub-but:active{
-  -webkit-transform: translateY(4px);
+-webkit-transform: translateY(4px);
  transform: translateY(4px);
  border-bottom: none;
 }
@@ -267,19 +264,32 @@ input[type=radio]:checked + label{
   text-decoration:none;
 }
 .ue{
-  margin:100px 0 30px
+  margin:100px 0 30px;
+  transition:1s;
 }
+.ue:hover{
+  transform: translateY(-0.5rem);
+  /* transform: rotateX(360deg); */
+}
+.shita{
+  transition: 1s;
+}
+
+.shita:hover{
+  transform: translateY(0.5rem);
+}
+
 .go-down{
   transition:1s;
 }
 .go-down:hover{
-  font-size:2rem;
+  /* font-size:2rem; */
 }
 .go-up{
-  transition:1s;
+  /* transition:1s; */
 }
 .go-up:hover{
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 /* 2ND PART */
@@ -296,7 +306,7 @@ input[type=radio]:checked + label{
 }
 
 .Que{
-  margin-top:100px;
+  margin:50px 0;
   font-size:1.8rem;
   font-weight: bold;
   /* text-decoration: underline; */
@@ -319,7 +329,7 @@ input[type=radio]:checked + label{
 	/* margin-bottom: 1rem; */
 
   width:18%;
-  margin: 10px 0 0;
+  /* margin: 20px 0 0; */
   height:50px;
 }
 
@@ -364,11 +374,12 @@ input[type=radio]:checked + label{
 .option{
 	/* content: " "; */
 	/* width: 5rem; */
-	/* height: 1rem; */
+	/* height:300px; */
 	/* padding-bottom: 5px;
 	padding-right: 2rem;
 	padding-left: 2rem; */
 	position: absolute;
+
 	/* grid-row-start: row1-start; */
 	/* grid-row-end: row2-start; */
 	text-align: center;
@@ -391,6 +402,17 @@ input[type=radio]:checked + label{
 
 #cName{
   font-size:3rem;
+}
+
+#kenshi{
+  width:300px;
+  height:200px;
+  margin-top:30px;
+  /* display: none; */
+  border-radius: 10px;
+  object-fit: cover;
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, .3);
+  box-shadow: 0 5px 8px rgba(0, 0, 0, .3);
 }
 
 .fab{

@@ -1132,6 +1132,33 @@ var TCD = {
 	"population": "4",
 	"peace": "4"
 }
+var  = { 
+	"countryName": "Channel Islands",
+	"capital": "#N/A",
+	"currency": "#N/A",
+	"continent": "#N/A",
+	"expensive": "#N/A",
+	"trend": "#N/A",
+	"beautiful": "#N/A",
+	"infrastructure": "#N/A",
+	"technology": "#N/A",
+	"sportsRanking": "#N/A",
+	"tourism": "2",
+	"pic": "assets/.jpg",
+	"cuisine": "#N/A",
+	"alcohol": "#N/A",
+	"fruits": "#N/A",
+	"drinks": "#N/A",
+	"sports": "#N/A",
+	"dance": "#N/A",
+	"distance": "#N/A",
+	"groceries": "#N/A",
+	"temerature": "5",
+	"density": "5",
+	"gdp": "#N/A",
+	"population": "#N/A",
+	"peace": "#N/A"
+}
 var CHL = { 
 	"countryName": "Chile",
 	"capital": "Santiago",
@@ -4224,7 +4251,7 @@ var NOR = {
 	"tourism": "5",
 	"pic": "assets/NOR.jpg",
 	"cuisine": "Fårikål",
-	"alcohol": "Akevitt (must be distilled from Norwegian potatoes and aged for a minimum of six months in oak casks to be labeled \"Norwegian Akevitt\", unlike Danish and Swedish akvavit, which is commonly grain-based and unaged)",
+	"alcohol": "Akevitt (must be distilled from Norwegian potatoes and aged for a minimum of six months in oak casks to be labeled "Norwegian Akevitt", unlike Danish and Swedish akvavit, which is commonly grain-based and unaged)",
 	"fruits": "#N/A",
 	"drinks": "",
 	"sports": "Cross-country skiing (winter)",
@@ -5018,6 +5045,33 @@ var STP = {
 	"density": "#N/A",
 	"gdp": "1",
 	"population": "1",
+	"peace": "#N/A"
+}
+var  = { 
+	"countryName": "Sark",
+	"capital": "#N/A",
+	"currency": "#N/A",
+	"continent": "#N/A",
+	"expensive": "#N/A",
+	"trend": "#N/A",
+	"beautiful": "#N/A",
+	"infrastructure": "#N/A",
+	"technology": "#N/A",
+	"sportsRanking": "#N/A",
+	"tourism": "1",
+	"pic": "assets/.jpg",
+	"cuisine": "#N/A",
+	"alcohol": "#N/A",
+	"fruits": "#N/A",
+	"drinks": "#N/A",
+	"sports": "#N/A",
+	"dance": "#N/A",
+	"distance": "#N/A",
+	"groceries": "#N/A",
+	"temerature": "#N/A",
+	"density": "#N/A",
+	"gdp": "#N/A",
+	"population": "#N/A",
 	"peace": "#N/A"
 }
 var SAU = { 
@@ -6452,474 +6506,4 @@ var ZWE = {
 	"peace": "4"
 }
 
-var countries = [AFG, ALA, ALB, DZA, ASM, AND, AGO, AIA, ATG, ARG, ARM, ABW, AUS, AUT, AZE, BHS, BHR, BGD, BRB, BLR, BEL, BLZ, BEN, BMU, BTN, BOL, BES, BIH, BWA, BRA, VGB, BRN, BGR, BFA, BDI, CPV, KHM, CMR, CAN, CYM, CAF, TCD, CHL, CHN, HKG, MAC, COL, COM, COG, COK, CRI, CIV, HRV, CUB, CUW, CYP, CZE, PRK, COD, DNK, DJI, DMA, DOM, ECU, EGY, SLV, GNQ, ERI, EST, ETH, FRO, FLK, FJI, FIN, FRA, GUF, PYF, GAB, GMB, GEO, DEU, GHA, GIB, GRC, GRL, GRD, GLP, GUM, GTM, GGY, GIN, GNB, GUY, HTI, VAT, HND, HUN, ISL, IND, IDN, IRN, IRQ, IRL, IMN, ISR, ITA, JAM, JPN, JEY, JOR, KAZ, KEN, KIR, KWT, KGZ, LAO, LVA, LBN, LSO, LBR, LBY, LIE, LTU, LUX, MDG, MWI, MYS, MDV, MLI, MLT, MHL, MTQ, MRT, MUS, MYT, MEX, FSM, MCO, MNG, MNE, MSR, MAR, MOZ, MMR, NAM, NRU, NPL, NLD, NCL, NZL, NIC, NER, NGA, NIU, NFK, MNP, NOR, OMN, PAK, PLW, PAN, PNG, PRY, PER, PHL, PCN, POL, PRT, PRI, QAT, KOR, MDA, REU, ROU, RUS, RWA, BLM, SHN, KNA, LCA, MAF, SPM, VCT, WSM, SMR, STP, SAU, SEN, SRB, SYC, SLE, SGP, SXM, SVK, SVN, SLB, SOM, ZAF, SSD, ESP, LKA, PSE, SDN, SUR, SJM, SWZ, SWE, CHE, SYR, TJK, THA, MKD, TLS, TGO, TKL, TON, TTO, TUN, TUR, TKM, TCA, TUV, UGA, UKR, ARE, GBR, TZA, USA, VIR, URY, UZB, VUT, VEN, VNM, WLF, ESH, YEM, ZMB, ZWE];
-
-
-var pictureDisplayArray = [
-	JPN,ITA,THA,BHS,AFG,ARG,ALA,AND,CZE,LBN,ARE,KWT,ISL,LUX,LVA,SMR,LKA,MLT,CYP,MNE,GRD,BLM,SVK,MCO,URY,NLD,ESH,CAN,NOR,ESP,POL,FRA,IND,HKG,KEN,ZMB,EGY,CHN,UKR,FIN,SGP,AUS,VIR,BRA,SAU,GBR,TZA
-];
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-var questionTopicArray = ["distance",
-	"groceries",
-	"peace",
-	"temerature",
-	"population",
-	"gdp",
-	"sportsRanking",
-	"density"
-];
-
-function weather(btn) {
-	document.getElementById("pic").style.display = "block";
-	var buttonvalue = btn.value;
-	console.log(buttonvalue)
-		// var jpndict = {
-		//   countryName: "Japan",
-		//   tempreture: "Cold",
-		//   food: "Seafood",
-		//   pic: "Japan.jpg"
-		// }
-		// var usdict = {
-		//   countryName: "United States",
-		//   tempreture: "Hot",
-		//   food: "Hamburger",
-		//   pic: "America.jpg"
-		// }
-		//
-		// var countries = [jpndict, usdict]
-
-	if (buttonvalue == "Y") {
-		cindex = 1;
-	} else if (buttonvalue == "N") {
-		cindex = 0;
-	} else {
-		document.getElementById("cName").innerHTML = "Let me think another country.";
-
-		document.getElementById("result").innerHTML = "";
-
-		document.getElementById("pic").src = "Question.jpg";
-		return
-	}
-
-	var x = countries[cindex].countryName + " is a " + countries[cindex].tempreture +
-		" country. It's famous food is " + countries[cindex].food;
-
-	var y = "The best country for you is " + "<span>" + countries[cindex].countryName +
-		"</span>";
-
-	var z = countries[cindex].pic;
-
-	document.getElementById("result").innerHTML = x;
-
-	document.getElementById("cName").innerHTML = y;
-
-	document.getElementById("pic").src = z;
-}
-$(function() {
-	// #で始まるリンクをクリックしたら実行されます
-	$('a[href^="#"]').click(function() {
-		// スクロールの速度
-		var speed = 400; // ミリ秒で記述
-		var href = $(this).attr("href");
-		var target = $(href == "#" || href == "" ? 'html' : href);
-		var position = target.offset().top;
-		$('body,html').animate({
-			scrollTop: position
-		}, speed, 'swing');
-		return false;
-	});
-});
-
-
-var num = 0;
-
-
-function slideshow_timer() {
-	num = Math.floor(Math.random() * pictureDisplayArray.length);
-
-	if (num === pictureDisplayArray.length - 1) {
-		num = 0;
-	} else {
-		num++;
-	}
-	document.getElementById("mypic").src = pictureDisplayArray[num]["pic"];
-	document.getElementById("couName").innerHTML = pictureDisplayArray[num].countryName;
-	// document.getElementById("pic").src = pictureDisplayArray[num]["pic"];
-	// document.getElementById("cName").innerHTML = pictureDisplayArray[num].countryName;
-}
-
-setInterval(slideshow_timer, 3000);
-
-var answerValue = "";
-
-var sqeezedArray = []
-
-var questionArray = [
-	"How many days do you have?", //1distance
-	"How much budget do you have?", //2groceries
-	"Do you want to feel extraordinary with much risks?", //3peace
-	"What kind of weather do you like?", //4temerature
-	"Do you want to go to the large country?",//5population
-	"Do you want to go to the rich country?",//6gdp
-	"Are you big fun of sports?", //7sports
-	"Do you want to hang out many natives?"//8density
-];
-
-var lowArray = [
-	"A few days", //1distance
-	"Cheap one please",//2groceries
-	"Safety is the best",//3peace
-	"Cold", //4temerature
-	"Small",//5population
-	"I don't mind it",//6gdp
-	"Sports is my life", //7sports
-	"Not necesarry"//8density
-];
-
-var highArray = [
-	"Forever(more than 2 weeks)", //1distance
-	"Sky-high coz I'm rich", //2groceries
-	"Yeah, I'm brave", //3peace
-	"Hot like Kylie Jenner", //4temerature
-	"Large?",//5population
-	"Of course",//6gdp
-	"Who is the Michel Jourdan?\n(Not interested in sports)", //7sports
-	"Necessary" //8density
-];
-
-var questionTick = 0;
-var quesnumber = 0;
-
-function getValue() {
-
-	var markedCheckbox = document.getElementsByName("options");
-
-
-	for (var checkbox of markedCheckbox) {
-		if (checkbox.checked) {
-			console.log("checkbox: ", checkbox);
-			answerValue = checkbox.value;
-		}
-	}
-
-
-	var count;
-	var userInput;
-	var value;
-
-	if (countries.length > 70 && quesnumber < 7) {
-		userInput = parseInt(answerValue);
-		console.log("userInput"+userInput);
-		// 各国から指定の項目の値をもってくる
-					var currentQuestion = questionTopicArray[quesnumber];
-
-					console.log(currentQuestion); 
-					questionTick ++;
-					quesnumber = questionTick%8;
-		for (count = 0; count < countries.length; count++) {
-			var currentCountry = countries[count];
-// 			if (typeof currentCountry == 'undefined')
-// 			{
-// 				console.log("currentCountry is undefined count = ", count);
-// 			}
-			value = parseInt(currentCountry[currentQuestion]);
-			if (userInput - 1 <= value && value <= userInput + 1) {
-				console.log("able to in for loop");
-			} else {
-				console.log("else");
-				countries.splice(count, 1);
-				count--;
-			}
-		}
-		answerValue = "";
-		console.log("countries" + countries);
-			outputNext();
-
-		return;
-	}
-	else {
-		document.getElementById("multiple").style.display = "block";
-		document.getElementById("optionContent").style.display = "none";
-		var allQuestionAndOptions = showQuestionWithRandomCountries(questionTopicArray2,
-	questionDictionary, countriesLeft, numberOfRandomCountries);
-	debugger;
-	displayQuestionsAndOptions(allQuestionAndOptions);
-
-	}
-
-	// 残りの国数が１０以下かチェック
-	// １０以上なら次の入力へ
-	// １０以下ならマッチングへ
-
-	// console.log(answerArray)
-	// /*alert("selected value is: " + answer)*/
-	// document.getElementById("result").innerHTML = answerArray
-
-
-// 	outputNext();
-	// document.getElementById("question").innerHTML = questionArray[questionNum];
-	// document.getElementById("low").innerHTML = lowArray[questionNum];
-	// document.getElementById("high").innerHTML = highArray[questionNum];
-	// document.getElementById("number").innerHTML = questionNum+1;
-}
-
-var secondanswerArray = []
-var countrystock = []
-var checkcount = 0;
-
-function getValue2() {
-	var markedCheckbox2 = document.getElementsByClassName("optionRadio");
-
-	for (var checkbox2 of markedCheckbox2) {
-		if (checkbox2.checked) {
-			console.log("checkbox: ", checkbox2);
-			secondanswerArray.push(checkbox2.value);
-			checkcount++;
-		}
-	}
-	if (checkcount <5) {
-		return "Tarinai";
-		}
-	for (count = 0; count < countries.length-1; count++) {
-		if (countries[count]["cuisine"] == secondanswerArray[0]) {
-			countrystock.push(countries[count]);
-		}
-		else if (countries[count]["sports"] == secondanswerArray[1]) {
-			countrystock.push(countries[count]);
-		}
-		else if (countries[count]["dance"] == secondanswerArray[2]) {
-			countrystock.push(countries[count]);
-		}
-		else if (countries[count]["drinks"] == secondanswerArray[3]) {
-			countrystock.push(countries[count]);
-		}
-		else if (countries[count]["alcohol"] == secondanswerArray[4]) {
-			countrystock.push(countries[count]);
-		}
-
-	}
-	for (i = 0; i <countrystock.length; i++)
-	{
-			console.log(countrystock[i]["countryName"]);
-	}
-}
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function bestmatch(countrystock) {
-    if(countrystock.length == 0)
-    {
-    	console.log("countrystock is null");
-        return null;
-       }
-    var bestmatchMap = {};
-    var maxEl = countrystock[0], maxCount = 1;
-
-    for(var i = 0; i < countrystock.length; i++) {
-        var el = countrystock[i];
-        if(bestmatchMap[el] == null)
-            bestmatchMap[el] = 1;
-        else
-            bestmatchMap[el]++;
-        if(bestmatchMap[el] > maxCount) {
-            maxEl = el;
-            maxCount = bestmatchMap[el];
-        }
-    }
-    return maxEl;
-}
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-function outputNext() {
-	document.getElementById("R3").checked = true;
-	document.getElementById("question").innerHTML = questionArray[quesnumber];
-	document.getElementById("low").innerHTML = lowArray[quesnumber];
-	document.getElementById("high").innerHTML = highArray[quesnumber];
-}
-
-function discriminator(qValue, dictArray, question) {
-	value
-	dictArray
-}
-
-function ranking() {
-	getValue();
-}
-
-function dicision() {
-	var IsTarinai = getValue2();
-	if (IsTarinai == "Tarinai") {
-		alert("You have to answer everything even if it's ---."); 
-		return;
-	}
-	var finalResult = bestmatch(countrystock);
-	var finalResultName = finalResult["countryName"];
-	var finalResultPic = finalResult["pic"];
-	console.log(finalResult);
-	document.getElementById("multiple").style.display = "none";
-	document.getElementById("research").style.display = "block";
-	document.getElementById("cName").innerHTML = finalResultName;
-	document.getElementById("kenshi").src = finalResultPic;
-	
-}
-
-function filter() {}
-
-window.onload = function() {
-	outputNext();
-}
-
-
-///////////////////////////showQuestionWithRandomCoutries/////////////////
-
-
-var countriesLeft = countries;
-var numberOfRandomCountries = 5;
-
-
-function getRandomInt(min, max) {
-	min = Math.ceil(min);
-	max = Math.floor(max);
-	return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-function getMultipleRandomInt(min, max, numberOfInt) {
-	var randomIntArray = [];
-	while (randomIntArray.length < numberOfInt) {
-		var currentRandomInt = getRandomInt(min, max);
-		debugger;
-		if (randomIntArray.indexOf(currentRandomInt) === -1) randomIntArray.push(
-			currentRandomInt);
-	}
-	return randomIntArray;
-}
-
-
-var questionDictionary = {
-	"cuisine": "Which one is your favorite food?",
-	"sports": "Which sport do you like the best?",
-	"dance": "Are you good at dance?",
-	"drinks": "Do you like any drink?",
-	"alcohol": "Which alcohol can excite your heart?"
-};
-
-var questionTopicArray2 = ["cuisine",
-	"sports",
-	"dance",
-	"drinks",
-	"alcohol"
-];
-
-function showQuestionWithRandomCountries(questionTopicArray2,
-	questionDictionary, countriesLeft, numberOfRandomCountries) {
-	var questionedMatter = "";
-	var questionSentence = "";
-	var randomCountriesIndexArray = [];
-	var allQuestionAndOptionArray = [];
-	var currentQuestionAndOptionArray = [];
-	var currentCountryIndex = 0;
-	var currentCountry = {};
-	
-	debugger;
-
-	for (questionIndex = 0; questionIndex < questionTopicArray2.length; questionIndex++) {
-		currentQuestionAndOptionArray = [];
-
-		questionedMatter = questionTopicArray2[questionIndex];
-
-		questionSentence = questionDictionary[questionedMatter];
-
-		currentQuestionAndOptionArray.push(questionSentence);
-		
-		debugger;
-
-		randomCountriesIndexArray = getMultipleRandomInt(0, countries.length-1,
-			numberOfRandomCountries);
-
-		console.log(randomCountriesIndexArray);
-		
-		debugger;
-
-		for (arrayIndex = 0; arrayIndex < randomCountriesIndexArray.length; arrayIndex++) {
-			currentCountryIndex = randomCountriesIndexArray[arrayIndex];
-
-			currentCountry = countries[currentCountryIndex];
-			currentQuestionAndOptionArray.push(currentCountry[questionedMatter]);
-		}
-		
-		debugger;
-
-
-		allQuestionAndOptionArray.push(currentQuestionAndOptionArray);
-	}
-
-	return allQuestionAndOptionArray;
-}
-
-var allQuestionAndOptions = showQuestionWithRandomCountries(questionTopicArray2,
-	questionDictionary, countriesLeft, numberOfRandomCountries);
-
-console.log(allQuestionAndOptions);
-
-function displayQuestionsAndOptions(allQuestionAndOptions) {
-	var parentArrayCounter = 0;
-	var innerArrayCounter = 0;
-	var questionIndex = 1;
-	var optionWordIndex = 1;
-	var questionID = "q";
-	var optionID = "option";
-	var inputID = "radio";
-	var checkerID = "c";
-
-	for (parentArrayCounter = 0; parentArrayCounter < allQuestionAndOptions.length; parentArrayCounter++)
-	{
-		element = allQuestionAndOptions[parentArrayCounter];
-
-		var currentQuestion = element[0];
-		questionID = "q" + String(questionIndex);
-		document.getElementById(questionID).innerHTML = String(currentQuestion);
-		for (innerArrayCounter = 1; innerArrayCounter < element.length; innerArrayCounter++) {
-			optionID = "optionWord" + String(optionWordIndex);
-			checkerID = "checker" + String(optionWordIndex);
-			var currentOption = element[innerArrayCounter];
-			if (currentOption == "#N/A" || currentOption == "") {
-				currentOption = "---";
-			}
-			document.getElementById(checkerID).value = currentOption;
-			
-			if (currentOption.length > 30)
-			{
-				var buff = "";
-				for (letterIndex = 0; letterIndex < 30; letterIndex++)
-				{
-					buff += currentOption[letterIndex];
-				}
-				
-				currentOption = buff + "...";
-			}
-			
-			document.getElementById(optionID).innerHTML = currentOption;
-
-
-			optionWordIndex++;
-		}
-
-		questionIndex++;
-	}
-}
-
-displayQuestionsAndOptions(allQuestionAndOptions);
-
-
-//wikipedia - google
-document.getElementById('wiki').onclick = function(){
-	var wikiCountry = "https://en.wikipedia.org/wiki/" + document.getElementById('cName').textContent;
-	window.open(wikiCountry,'_blank');
-}
-
-document.getElementById('google').onclick = function(){
-	var googleCountry = "https://www.google.com/search?q=" + document.getElementById('cName').textContent;
-	window.open(googleCountry,'_blank');
-}
+var countries = [AFG, ALA, ALB, DZA, ASM, AND, AGO, AIA, ATG, ARG, ARM, ABW, AUS, AUT, AZE, BHS, BHR, BGD, BRB, BLR, BEL, BLZ, BEN, BMU, BTN, BOL, BES, BIH, BWA, BRA, VGB, BRN, BGR, BFA, BDI, CPV, KHM, CMR, CAN, CYM, CAF, TCD, , CHL, CHN, HKG, MAC, COL, COM, COG, COK, CRI, CIV, HRV, CUB, CUW, CYP, CZE, PRK, COD, DNK, DJI, DMA, DOM, ECU, EGY, SLV, GNQ, ERI, EST, ETH, FRO, FLK, FJI, FIN, FRA, GUF, PYF, GAB, GMB, GEO, DEU, GHA, GIB, GRC, GRL, GRD, GLP, GUM, GTM, GGY, GIN, GNB, GUY, HTI, VAT, HND, HUN, ISL, IND, IDN, IRN, IRQ, IRL, IMN, ISR, ITA, JAM, JPN, JEY, JOR, KAZ, KEN, KIR, KWT, KGZ, LAO, LVA, LBN, LSO, LBR, LBY, LIE, LTU, LUX, MDG, MWI, MYS, MDV, MLI, MLT, MHL, MTQ, MRT, MUS, MYT, MEX, FSM, MCO, MNG, MNE, MSR, MAR, MOZ, MMR, NAM, NRU, NPL, NLD, NCL, NZL, NIC, NER, NGA, NIU, NFK, MNP, NOR, OMN, PAK, PLW, PAN, PNG, PRY, PER, PHL, PCN, POL, PRT, PRI, QAT, KOR, MDA, REU, ROU, RUS, RWA, BLM, SHN, KNA, LCA, MAF, SPM, VCT, WSM, SMR, STP, , SAU, SEN, SRB, SYC, SLE, SGP, SXM, SVK, SVN, SLB, SOM, ZAF, SSD, ESP, LKA, PSE, SDN, SUR, SJM, SWZ, SWE, CHE, SYR, TJK, THA, MKD, TLS, TGO, TKL, TON, TTO, TUN, TUR, TKM, TCA, TUV, UGA, UKR, ARE, GBR, TZA, USA, VIR, URY, UZB, VUT, VEN, VNM, WLF, ESH, YEM, ZMB, ZWE, ]
